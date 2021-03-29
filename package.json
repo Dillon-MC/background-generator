@@ -5,9 +5,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "build": "browserify script.js > bundle.js && live-server",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build": "browserify script.js > bundle.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +17,6 @@
     "url": "https://github.com/Dillon-MC/background-generator/issues"
   },
   "dependencies": {
-    "gh-pages": "^3.1.0",
     "lodash": "^4.17.20"
   }
 }
