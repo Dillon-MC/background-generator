@@ -1,10 +1,13 @@
 {
   "name": "background-generator",
+  "homepage": "https://github.com/Dillon-MC/background-generator/index.html",
   "version": "1.0.0",
   "description": "",
   "main": "script.js",
   "scripts": {
-    "build": "browserify script.js > bundle.js && live-server"
+    "build": "browserify script.js > bundle.js && live-server",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -15,7 +18,6 @@
   "bugs": {
     "url": "https://github.com/Dillon-MC/background-generator/issues"
   },
-  "homepage": "https://github.com/Dillon-MC/background-generator#readme",
   "dependencies": {
     "lodash": "^4.17.20"
   }
